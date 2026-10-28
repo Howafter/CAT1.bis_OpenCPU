@@ -1,7 +1,7 @@
 #ifndef LUAT_PM_H
 #define LUAT_PM_H
 
-#include "platform_profile.h"
+
 #include <stdint.h>
 #include "liot_power.h"
 

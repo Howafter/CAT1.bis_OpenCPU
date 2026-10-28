@@ -2,7 +2,7 @@
 
 #include <stdarg.h>
 #include <stdio.h>
-
+#include "liot_type.h"
 #include "liot_os.h"
 #include "liot_usb.h"
 
@@ -45,7 +45,7 @@ void luat_debug_print(const char *fmt, ...)
     vsnprintf(log_buf, sizeof(log_buf), fmt, args);
     va_end(args);
 
-    LIOT_CUST_PRINTF("[luat] %s", log_buf);
+    liot_trace("[luat] %s", log_buf);
 }
 
 void luat_debug_print_ex(const char *func, int line, const char *fmt, ...)
@@ -63,5 +63,5 @@ void luat_debug_print_ex(const char *func, int line, const char *fmt, ...)
     va_end(args);
 
     snprintf(log_buf, sizeof(log_buf), "%s %d:[ luat ] %s", func ? func : "unknown", line, msg_buf);
-    LIOT_CUST_PRINTF("%s", log_buf);
+    liot_trace("%s", log_buf);
 }

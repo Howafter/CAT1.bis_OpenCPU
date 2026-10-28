@@ -2,7 +2,7 @@
 #define LUAT_GPIO_H
 
 #include <stdint.h>
-#include "liot_gpio.h"
+#include "liot_gpio2.h"
 #include "liot_type.h"
 #ifdef __cplusplus
 extern "C" {

@@ -1,5 +1,20 @@
 ######################################################################################################################
-# This is for the reconfiguration of the default switch in "SDK/rules/Makefile.defs".
-# To make it convenient for users to enable different features for different projects.
+# 此文件用于覆盖 SDK/rules/Makefile.defs 中的默认配置，
+# 方便不同工程分别启用所需功能。
 ######################################################################################################################
+
 APP_VERSION = 01
+
+BUILD_COMP_THIRDPART_EN = y
+BUILD_THPART_LIB1_ENABLE = n
+
+# 可选模块示例：填入模块目录名即可启用；多个模块以空格分隔。
+# 例如：SAFETYTAG_MODULES = demo gnss sensor
+# SAFETYTAG_MODULES = demo
+
+# 是否编译 compat/luat 兼容层：1=编译，0=不编译。
+SAFETYTAG_ENABLE_LUAT_COMPAT ?= 1
+
+# 已验证可用的兼容层适配文件。不建议直接填入 GPIO、UART、PM 等适配，
+# 除非已同时配置其依赖的平台组件。
+# SAFETYTAG_LUAT_COMPAT_PORTS ?= luat_rtos_port //api未适配结束

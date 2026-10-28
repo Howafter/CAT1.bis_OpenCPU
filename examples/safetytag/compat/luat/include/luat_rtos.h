@@ -6,7 +6,7 @@
 
 #include "liot_os.h"
 #include "luat_init_export.h"
-#include "platform_profile.h"
+
 
 #ifdef __cplusplus
 extern "C" {

@@ -191,7 +191,7 @@ void usb_drv_set(int status);
 // #define sim_get_iccid(iccid, len, nSim) liot_sim_get_iccid(iccid, len, nSim)
 /* sim end */
 
-// #define debug(format, ...) LIOT_CUST_PRINTF(format, ##__VA_ARGS__)
+// #define debug(format, ...) liot_trace(format, ##__VA_ARGS__)
 // #define debug_v(format,  ...) LIOT_PRINTF(UNILOG_LIOT_CUST, P_VALUE, format, ##__VA_ARGS__)
 
 // NRFData 模块日志受 g_dbg_nrfdata 开关控制
