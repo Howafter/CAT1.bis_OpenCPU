@@ -1,5 +1,4 @@
 CUSTOM_DIR := examples/$(PROJECT)
-
 include $(TOP)/$(CUSTOM_DIR)/config
 
 CFLAGS_INC += -I $(TOP)/$(CUSTOM_DIR)/inc

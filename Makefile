@@ -4,7 +4,7 @@ build::
 # User Configurable Options
 ###########################################################
 export TOP						:= $(patsubst %/,%,$(dir $(abspath $(lastword $(MAKEFILE_LIST)))))
-export PROJECT 					?= app
+export PROJECT 					?= safetytag
 export MODEM 					?= NT26FCNB60WNA
 export MODEMPKG 				?= 
 export BUILD_COMP_SECBOOT_EN	?= 

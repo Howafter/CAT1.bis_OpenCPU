@@ -1,0 +1,5 @@
+######################################################################################################################
+# This is for the reconfiguration of the default switch in "SDK/rules/Makefile.defs".
+# To make it convenient for users to enable different features for different projects.
+######################################################################################################################
+APP_VERSION = 01
